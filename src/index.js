@@ -1,6 +1,6 @@
 import conservation from './conservation';
 
-module.exports = () => configContext => ({
+export default () => configContext => ({
   extensions: {
     livingplant: {
       conservation: conservation(configContext),
