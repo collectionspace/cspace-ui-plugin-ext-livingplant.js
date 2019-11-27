@@ -33,16 +33,14 @@ export default (configContext) => {
 
               <Cols>
                 <Col>
-                  <Row>
-                    <Field name="applicationDate" />
-                    <Field name="nextApplicationDate" />
-                  </Row>
-
+                  <Field name="applicationDate" />
                   <Field name="amountApplied" />
                   <Field name="fertilizationNotes" />
                 </Col>
 
                 <Col>
+                  <Field name="nextApplicationDate" />
+
                   <Field name="fertilizersToBeUsed">
                     <Field name="fertilizerToBeUsed" />
                   </Field>

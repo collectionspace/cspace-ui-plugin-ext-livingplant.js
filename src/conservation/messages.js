@@ -12,7 +12,7 @@ export default {
     },
     pest: {
       id: 'panel.conservation.pest',
-      defaultMessage: 'Pests and Disease',
+      defaultMessage: 'Pest and Disease',
     },
     repotting: {
       id: 'panel.conservation.repotting',

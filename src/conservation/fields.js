@@ -34,6 +34,12 @@ export default (configContext) => {
         fertilizationGroup: {
           [config]: {
             repeating: true,
+            messages: defineMessages({
+              fullName: {
+                id: 'field.conservation_livingplant.fertilizationGroup.fullName',
+                defaultMessage: 'Fertilization',
+              },
+            }),
             view: {
               type: CompoundInput,
             },
@@ -54,10 +60,34 @@ export default (configContext) => {
               },
             },
           },
+          appliedBy: {
+            [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.appliedBy.fullName',
+                  defaultMessage: 'Fertilizer applied by',
+                },
+                name: {
+                  id: 'field.conservation_livingplant.appliedBy.name',
+                  defaultMessage: 'Applied by',
+                },
+              }),
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'person/local,person/shared',
+                },
+              },
+            },
+          },
           nitrogenPercent: {
             [config]: {
               dataType: DATA_TYPE_FLOAT,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.nitrogenPercent.fullName',
+                  defaultMessage: 'Fertilizer nitrogen %',
+                },
                 name: {
                   id: 'field.conservation_livingplant.nitrogenPercent.name',
                   defaultMessage: 'Nitrogen %',
@@ -72,6 +102,10 @@ export default (configContext) => {
             [config]: {
               dataType: DATA_TYPE_FLOAT,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.phosphorusPercent.fullName',
+                  defaultMessage: 'Fertilizer phosphorus %',
+                },
                 name: {
                   id: 'field.conservation_livingplant.phosphorusPercent.name',
                   defaultMessage: 'Phosphorus %',
@@ -86,6 +120,10 @@ export default (configContext) => {
             [config]: {
               dataType: DATA_TYPE_FLOAT,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.potassiumPercent.fullName',
+                  defaultMessage: 'Fertilizer potassium %',
+                },
                 name: {
                   id: 'field.conservation_livingplant.potassiumPercent.name',
                   defaultMessage: 'Potassium %',
@@ -100,6 +138,10 @@ export default (configContext) => {
             [config]: {
               dataType: DATA_TYPE_DATE,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.applicationDate.fullName',
+                  defaultMessage: 'Fertilizer application date',
+                },
                 name: {
                   id: 'field.conservation_livingplant.applicationDate.name',
                   defaultMessage: 'Application date',
@@ -110,25 +152,13 @@ export default (configContext) => {
               },
             },
           },
-          appliedBy: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.conservation_livingplant.appliedBy.name',
-                  defaultMessage: 'Applied by',
-                },
-              }),
-              view: {
-                type: AutocompleteInput,
-                props: {
-                  source: 'person/local,person/shared',
-                },
-              },
-            },
-          },
           amountApplied: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.amountApplied.fullName',
+                  defaultMessage: 'Fertilizer amount applied',
+                },
                 name: {
                   id: 'field.conservation_livingplant.amountApplied.name',
                   defaultMessage: 'Amount applied',
@@ -143,6 +173,10 @@ export default (configContext) => {
             [config]: {
               dataType: DATA_TYPE_DATE,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.nextApplicationDate.fullName',
+                  defaultMessage: 'Fertilizer next application date',
+                },
                 name: {
                   id: 'field.conservation_livingplant.nextApplicationDate.name',
                   defaultMessage: 'Next application date',
@@ -201,6 +235,12 @@ export default (configContext) => {
         pestsAndDiseaseGroup: {
           [config]: {
             repeating: true,
+            messages: defineMessages({
+              fullName: {
+                id: 'field.conservation_livingplant.pestsAndDiseaseGroup.fullName',
+                defaultMessage: 'Pest and Disease',
+              },
+            }),
             view: {
               type: CompoundInput,
             },
@@ -224,13 +264,13 @@ export default (configContext) => {
           identifiedBy: {
             [config]: {
               messages: defineMessages({
-                name: {
-                  id: 'field.conservation_livingplant.identifiedBy.name',
-                  defaultMessage: 'Identified by',
-                },
                 fullName: {
                   id: 'field.conservation_livingplant.identifiedBy.fullName',
                   defaultMessage: 'Pest/disease identified by',
+                },
+                name: {
+                  id: 'field.conservation_livingplant.identifiedBy.name',
+                  defaultMessage: 'Identified by',
                 },
               }),
               view: {
@@ -245,6 +285,10 @@ export default (configContext) => {
             [config]: {
               dataType: DATA_TYPE_DATE,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.dateObserved.fullName',
+                  defaultMessage: 'Pest/disease date observed',
+                },
                 name: {
                   id: 'field.conservation_livingplant.dateObserved.name',
                   defaultMessage: 'Date observed',
@@ -258,6 +302,10 @@ export default (configContext) => {
           treatedWith: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.treatedWith.fullName',
+                  defaultMessage: 'Pest/disease treated with',
+                },
                 name: {
                   id: 'field.conservation_livingplant.treatedWith.name',
                   defaultMessage: 'Treated with',
@@ -274,6 +322,10 @@ export default (configContext) => {
           treatedBy: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.treatedBy.fullName',
+                  defaultMessage: 'Pest/disease treated by',
+                },
                 name: {
                   id: 'field.conservation_livingplant.treatedBy.name',
                   defaultMessage: 'Treated by',
@@ -291,6 +343,10 @@ export default (configContext) => {
             [config]: {
               dataType: DATA_TYPE_DATE,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.treatmentDate.fullName',
+                  defaultMessage: 'Pest/disease treatment date',
+                },
                 name: {
                   id: 'field.conservation_livingplant.treatmentDate.name',
                   defaultMessage: 'Treatment date',
@@ -304,6 +360,10 @@ export default (configContext) => {
           futureTreatment: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.futureTreatment.fullName',
+                  defaultMessage: 'Pest/disease future treatment',
+                },
                 name: {
                   id: 'field.conservation_livingplant.futureTreatment.name',
                   defaultMessage: 'Future treatment',
@@ -318,6 +378,10 @@ export default (configContext) => {
             [config]: {
               dataType: DATA_TYPE_DATE,
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.futureTreatmentDate.fullName',
+                  defaultMessage: 'Pest/disease future treatment date',
+                },
                 name: {
                   id: 'field.conservation_livingplant.futureTreatmentDate.name',
                   defaultMessage: 'Future treatment date',
@@ -331,6 +395,10 @@ export default (configContext) => {
           futureTreatmentNotes: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.conservation_livingplant.futureTreatmentNotes.fullName',
+                  defaultMessage: 'Pest/disease future treatment note',
+                },
                 name: {
                   id: 'field.conservation_livingplant.futureTreatmentNotes.name',
                   defaultMessage: 'Future treatment note',
@@ -363,13 +431,13 @@ export default (configContext) => {
       performedBy: {
         [config]: {
           messages: defineMessages({
-            name: {
-              id: 'field.conservation_livingplant.performedBy.name',
-              defaultMessage: 'Performed by',
-            },
             fullName: {
               id: 'field.conservation_livingplant.performedBy.fullName',
               defaultMessage: 'Repotting performed by',
+            },
+            name: {
+              id: 'field.conservation_livingplant.performedBy.name',
+              defaultMessage: 'Performed by',
             },
           }),
           view: {
@@ -383,6 +451,10 @@ export default (configContext) => {
       soilMix: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.conservation_livingplant.soilMix.fullName',
+              defaultMessage: 'Repotting soil mix',
+            },
             name: {
               id: 'field.conservation_livingplant.soilMix.name',
               defaultMessage: 'Soil mix',
@@ -401,6 +473,10 @@ export default (configContext) => {
           // This is defined/validated as a float in 4.5. Is this an error?
           dataType: DATA_TYPE_FLOAT,
           messages: defineMessages({
+            fullName: {
+              id: 'field.conservation_livingplant.container.fullName',
+              defaultMessage: 'Repotting container',
+            },
             name: {
               id: 'field.conservation_livingplant.container.name',
               defaultMessage: 'Container',
@@ -414,6 +490,10 @@ export default (configContext) => {
       description: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.conservation_livingplant.description.fullName',
+              defaultMessage: 'Repotting description',
+            },
             name: {
               id: 'field.conservation_livingplant.description.name',
               defaultMessage: 'Description',
@@ -444,6 +524,10 @@ export default (configContext) => {
       plannedTreatment: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.conservation_livingplant.plannedTreatment.fullName',
+              defaultMessage: 'Repotting planned treatment',
+            },
             name: {
               id: 'field.conservation_livingplant.plannedTreatment.name',
               defaultMessage: 'Planned treatment',
