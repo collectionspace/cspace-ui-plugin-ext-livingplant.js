@@ -3,7 +3,7 @@ import { defineMessages } from 'react-intl';
 export default {
   panel: defineMessages({
     livingplant: {
-      id: 'panel.collectionobject.livingplant',
+      id: 'panel.conservation.livingplant',
       defaultMessage: 'Living Plant Information',
     },
     fertilization: {
