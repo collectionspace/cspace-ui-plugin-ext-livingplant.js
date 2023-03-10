@@ -1,18 +1,24 @@
 export default (configContext) => {
   const {
+    layoutComponents,
+    lib,
+    recordComponents,
+  } = configContext;
+
+  const {
     React,
-  } = configContext.lib;
+  } = lib;
 
   const {
     Cols,
     Col,
     Panel,
     Row,
-  } = configContext.layoutComponents;
+  } = layoutComponents;
 
   const {
     Field,
-  } = configContext.recordComponents;
+  } = recordComponents;
 
   return (
     <Panel name="livingplant" collapsible collapsed>
