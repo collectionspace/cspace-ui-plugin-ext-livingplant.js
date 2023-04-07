@@ -1,6 +1,7 @@
 # cspace-ui-plugin-ext-livingplant
 
-[![build status](https://travis-ci.org/collectionspace/cspace-ui-plugin-ext-livingplant.js.svg?branch=master)](https://travis-ci.org/collectionspace/cspace-ui-plugin-ext-livingplant.js)
+[![npm package](https://img.shields.io/npm/v/cspace-ui-plugin-ext-livingplant.svg)](https://www.npmjs.com/package/cspace-ui-plugin-ext-livingplant)
+[![continuous integration](https://github.com/collectionspace/cspace-ui-plugin-ext-livingplant.js/actions/workflows/ci-js.yml/badge.svg?branch=master&event=push)](https://github.com/collectionspace/cspace-ui-plugin-ext-livingplant.js/actions/workflows/ci-js.yml)
 
 Living Plant extension plugin for the CollectionSpace UI.
 
